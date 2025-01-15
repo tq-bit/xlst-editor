@@ -2,7 +2,6 @@
 import { useDarkTheme } from "./composables/useDarkTheme";
 import Toolbar from "primevue/toolbar";
 import Button from "primevue/button";
-import AppCheatsheetButton from "./components/XLST/AppCheatsheetButton.vue";
 import Toast from "primevue/toast";
 import XLSTEditor from "./components/XLST/XLSTEditor.vue";
 
@@ -24,7 +23,6 @@ const { isDarkTheme, toggleDarkTheme } = useDarkTheme();
         <h1 class="text-2xl">XLST Live Editor</h1>
       </template>
       <template #end>
-        <AppCheatsheetButton></AppCheatsheetButton>
         <Button
           :icon="isDarkTheme ? 'pi pi-sun' : 'pi pi-moon'"
           class="mr-2"
